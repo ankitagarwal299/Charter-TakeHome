@@ -1,0 +1,26 @@
+# Rewards Program (React JS Take-Home)
+
+This project calculates customer reward points based on transaction records over a three month period, showing **points per customer per month** and **total points**.
+
+## Rules
+A customer receives:
+- **1 point** for every dollar spent **between $50 and $100** (inclusive of the range above $50)
+- **2 points** for every dollar spent **over $100**
+
+Example: `$120` purchase  
+- 2 × ($120 - $100) = 40  
+- 1 × ($100 - $50) = 50  
+Total = **90 points**
+
+## Tech Requirements Covered
+- ✅ React JS (JavaScript only, no TypeScript)
+- ✅ Simulated asynchronous API call (`setTimeout`)
+- ✅ No Redux (uses `useState`, `useEffect`, `useMemo`)
+- ✅ Mock dataset that demonstrates edge cases and multiple months/customers
+
+## Getting Started (Vite)
+```bash
+npm create vite@latest rewards-ui -- --template react
+cd rewards-ui
+npm install
+npm run dev
